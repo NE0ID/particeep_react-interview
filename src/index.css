@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  background-color: rgb(46, 18, 46);
+}
+
+body h3 {
+  text-align: center;
+  color: aliceblue;
+}
+
+  .cards {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .card {
+    width: 175px;
+    height: 175px;
+    border: none;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .card:hover {
+    rotate: 1 1 0.5 15deg;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(50deg, rgba(255,255,255, 0.15) 0%, rgba(255, 255, 255,0.35) 35%, rgba(255, 255, 255, 0.5) 100%);
+    transition: 550ms;
+  }
+
+  .card h3 {
+    text-align: center;
+  }
+
+  .card meter {
+    margin: 20px;
+  }
+@media screen and (min-width: 460px) {
+  .cards {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 725px) {
+  .cards {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .cards {
+    grid-template-columns: auto auto auto auto;
+  }
+}
